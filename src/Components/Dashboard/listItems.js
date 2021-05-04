@@ -3,45 +3,41 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import AccessibilityNewRoundedIcon from '@material-ui/icons/AccessibilityNewRounded';
+import EmojiFoodBeverageRoundedIcon from '@material-ui/icons/EmojiFoodBeverageRounded';
+import ImportContactsRoundedIcon from '@material-ui/icons/ImportContactsRounded';
+import ContactMailRoundedIcon from '@material-ui/icons/ContactMailRounded';
 export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <DashboardIcon />
+        <ContactMailRoundedIcon />
       </ListItemIcon>
       <ListItemText primary='Home' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <ImportContactsRoundedIcon />
       </ListItemIcon>
       <ListItemText primary='Projects' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
+        <EmojiFoodBeverageRoundedIcon />
       </ListItemIcon>
       <ListItemText primary='Resume' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <BarChartIcon />
+        <AccessibilityNewRoundedIcon />
       </ListItemIcon>
       <ListItemText primary='Contact' />
     </ListItem>
-    <ListItem button>
-      {/* <ListItemIcon> */}
-      {/* <LayersIcon /> */}
-      {/* </ListItemIcon> */}
-      {/* <ListItemText primary='Integrations' /> */}
-    </ListItem>
+
+    <ListItem button></ListItem>
   </div>
 );
 
@@ -50,19 +46,19 @@ export const secondaryListItems = (
     <ListSubheader inset>Saved reports</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <GitHubIcon />
       </ListItemIcon>
       <ListItemText primary='Current month' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <LinkedInIcon />
       </ListItemIcon>
       <ListItemText primary='Last quarter' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <EmailIcon />
       </ListItemIcon>
       <ListItemText primary='Year-end sale' />
     </ListItem>
