@@ -1,11 +1,25 @@
+import { Container, Grid } from '@material-ui/core';
 import './App.css';
-import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
   return (
-    <div className='App'>
-      <Dashboard />
-    </div>
+    <Container>
+      <Grid container>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={4}
+          lg={3}
+          style={{ backgroundColor: 'blue' }}
+        >
+          abc
+        </Grid>
+        <Grid item xs style={{ backgroundColor: 'red' }}>
+          defg
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
