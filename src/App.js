@@ -1,5 +1,12 @@
-import { Container, Grid } from '@material-ui/core';
 import './App.css';
+
+import { Container, Grid } from '@material-ui/core';
+
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Profile from './components/Profile/Profile';
+import Resume from './pages/Resume/Resume';
 
 function App() {
   return (
@@ -13,10 +20,13 @@ function App() {
           lg={3}
           style={{ backgroundColor: 'blue' }}
         >
-          abc
+          <Profile />
         </Grid>
         <Grid item xs style={{ backgroundColor: 'red' }}>
-          defg
+          <Header />
+          <Portfolio />
+          <Resume />
+          <Footer />
         </Grid>
       </Grid>
     </Container>
