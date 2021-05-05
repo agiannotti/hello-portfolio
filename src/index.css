@@ -3,4 +3,7 @@
 }
 
 body {
+  background: #fafafa;
+  overflow: hidden;
+  background: url('./assets/images/pattern3.jpg');
 }

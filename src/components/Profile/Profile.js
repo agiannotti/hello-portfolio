@@ -1,5 +1,8 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
+import './Profile.css';
+import face from './../../assets/images/soho-self-square.png';
+import BasicTimeline from '../Timeline/Timeline';
 
 const Profile = () => {
   return (
@@ -9,11 +12,11 @@ const Profile = () => {
         <Typography className='title'>Giannotti</Typography>
       </div>
       <figure className='profile_image'>
-        <img src='' alt='' />
+        <img src={face} alt='face' />
       </figure>
 
       <div className='profile_information'>
-        Insert Timeline
+        <BasicTimeline />
         <br />
         <button>dat button</button>
       </div>
