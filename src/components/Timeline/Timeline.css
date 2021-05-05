@@ -15,6 +15,7 @@
 
 .timeline .MuiTimelineItem-root {
   min-height: 0px;
+  padding-left: 20px;
 }
 
 .timeline .MuiTimelineItem-missingOppositeContent:before {
@@ -25,7 +26,7 @@
   color: rgb(255, 255, 255) !important;
   background-color: var(--main-color) !important;
   font-size: small !important;
-  padding: 4px !important;
+  padding: 12px !important;
 }
 
 /* Remaining Items */
@@ -39,7 +40,7 @@
 }
 
 .timeline .MuiTimelineConnector-root {
-  background-color: #eee;
+  background-color: rgb(170, 156, 156);
 }
 
 .timeline .timeline_dot_header > .MuiSvgIcon-root {
@@ -48,10 +49,10 @@
 }
 
 .timeline .separator_padding {
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .timeline .timeline_content {
   padding-top: 0px !important;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }

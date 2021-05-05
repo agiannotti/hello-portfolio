@@ -19,9 +19,7 @@ const BasicTimeline = ({ title, children, icon }) => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <Typography variant='h6' className={'timeline_header'}>
-            {title}
-          </Typography>
+          <Typography variant='h6' className={'timeline_header'}></Typography>
         </TimelineContent>
       </TimelineItem>
       {children}
