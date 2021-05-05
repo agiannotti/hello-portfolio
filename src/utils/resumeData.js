@@ -11,12 +11,12 @@ const resumeData = {
   phone: '(850)-408-4674',
 
   socials: {
-    gitHub: {
+    GitHub: {
       link: 'https://github.com/agiannotti',
       text: 'GitHub',
       icon: <GitHubIcon />,
     },
-    linkedIn: {
+    LinkedIn: {
       link: 'https://www.linkedin.com/in/agiannotti/',
       text: 'LinkedIn',
       icon: <LinkedInIcon />,
