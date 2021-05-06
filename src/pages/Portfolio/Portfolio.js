@@ -23,7 +23,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <Grid container className='section pb_45 pt_45'>
+      <Grid spacing={1} container className='section pb_45 pt_45'>
         {/*  Title */}
         <Grid item className='section_title mb_30'>
           <span></span>
@@ -65,11 +65,11 @@ const Portfolio = () => {
           </Tabs>
         </Grid>
         <Grid item xs={12}>
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             {resumeData.projects.map((project) => (
               <>
                 {tabValue === project.tag || tabValue === 'All' ? (
-                  <Grid item>
+                  <Grid item xs={12} sm={6} md={4}>
                     <Grow in timeout={1000}>
                       <Card
                         className='customCard'
@@ -82,11 +82,14 @@ const Portfolio = () => {
                             title={project.title}
                           />
                           <CardContent>
-                            <Typography className='customCard_title'>
+                            <Typography
+                              variant='body2'
+                              className='customCard_title'
+                            >
                               {project.title}
                             </Typography>
                             <Typography
-                              variant='body2'
+                              variant='caption'
                               className='customCard_caption'
                             >
                               {project.caption}
@@ -101,11 +104,15 @@ const Portfolio = () => {
             ))}
           </Grid>
         </Grid>
-        <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
+        <Dialog
+          className='projectDialog'
+          open={projectDialog}
+          onClose={() => setProjectDialog(false)}
+        >
           <DialogTitle onClose={() => setProjectDialog(false)}>
             {projectDialog.title}
           </DialogTitle>
-          <img src='' alt='' className='projectDialog_image' />
+          <img src={projectDialog.img} alt='' className='projectDialog_image' />
           <DialogContent>
             <Typography className='projectDialog_description'>
               {projectDialog.description}

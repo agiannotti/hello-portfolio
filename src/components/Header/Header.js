@@ -57,7 +57,7 @@ const Header = (props) => {
             as={NavLink}
             to='/blog'
             className={
-              pathName === '/portfolio' ? 'header_link_active' : 'header_link'
+              pathName === '/blog' ? 'header_link_active' : 'header_link'
             }
           >
             Blog

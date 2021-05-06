@@ -1,4 +1,4 @@
-import { Language, WebOutlined, YouTube } from '@material-ui/icons';
+import { Language, WebOutlined } from '@material-ui/icons';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -116,14 +116,12 @@ const resumeData = {
   projects: [
     {
       tag: 'React',
-      image:
-        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      image: '',
       title: 'React Project 1',
       caption: 'A short description',
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
-        { link: 'https://www.google.com', icon: <YouTube /> },
         { link: 'https://www.google.com', icon: <GitHubIcon /> },
         { link: 'https://www.google.com', icon: <Language /> },
       ],
@@ -138,7 +136,6 @@ const resumeData = {
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
-        { link: 'https://www.google.com', icon: <YouTube /> },
         { link: 'https://www.google.com', icon: <GitHubIcon /> },
         { link: 'https://www.google.com', icon: <Language /> },
       ],
@@ -153,7 +150,6 @@ const resumeData = {
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
-        { link: 'https://www.google.com', icon: <YouTube /> },
         { link: 'https://www.google.com', icon: <GitHubIcon /> },
         { link: 'https://www.google.com', icon: <Language /> },
       ],
@@ -168,7 +164,6 @@ const resumeData = {
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
-        { link: 'https://www.google.com', icon: <YouTube /> },
         { link: 'https://www.google.com', icon: <GitHubIcon /> },
         { link: 'https://www.google.com', icon: <Language /> },
       ],
