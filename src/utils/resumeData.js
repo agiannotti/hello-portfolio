@@ -113,12 +113,13 @@ const resumeData = {
       icon: <LinkedInIcon />,
     },
   },
-  portfolio: [
+  projects: [
     {
       tag: 'React',
       image:
         'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
       title: 'React Project 1',
+      caption: 'A short description',
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
@@ -132,6 +133,8 @@ const resumeData = {
       image:
         'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
       title: 'Angular Project 1',
+      caption: 'A short description',
+
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
@@ -145,6 +148,8 @@ const resumeData = {
       image:
         'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
       title: 'Python Project 1',
+      caption: 'A short description',
+
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
@@ -158,6 +163,8 @@ const resumeData = {
       image:
         'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
       title: 'SQL Project 1',
+      caption: 'A short description',
+
       description:
         'words wordswords wordswords wordswords wordswords wordswords words',
       links: [
