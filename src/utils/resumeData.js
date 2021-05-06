@@ -95,11 +95,11 @@ const resumeData = {
     },
     {
       title: 'BACK-END',
-      description: ['NodeJS', 'JavaScript', 'Python', 'Express'],
+      description: ['Python', 'JavaScript', 'NodeJS', 'postgresSQL', 'Express'],
     },
     {
       title: 'DATABASES',
-      description: ['FireBase', 'PostgreSQL', 'Heroku'],
+      description: ['PostgreSQL', 'Heroku', 'FireBase', 'AWS'],
     },
     {
       title: 'SOURCE CONTROL',
