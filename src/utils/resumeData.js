@@ -76,7 +76,7 @@ const resumeData = {
     {
       title: 'UX Design',
       description:
-        'understandings users and learning about their backgrounds, demographics, motivations, pain points, emotions, and life goals',
+        'understanding users and empathizing with different backgrounds, demographics, motivations, pain points, emotions, and life goals',
       icon: <DnsTwoToneIcon />,
     },
   ],
