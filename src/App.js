@@ -30,8 +30,8 @@ function App() {
                 <Route path='/'>
                   <Resume />
                 </Route>
-                <Route path='/'>
-                  <Resume />
+                <Route path='/contact'>
+                  <Contact />
                 </Route>
               </Switch>
             </div>

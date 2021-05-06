@@ -1,4 +1,4 @@
-import { WebOutlined } from '@material-ui/icons';
+import { Language, WebOutlined, YouTube } from '@material-ui/icons';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -113,6 +113,60 @@ const resumeData = {
       icon: <LinkedInIcon />,
     },
   },
+  portfolio: [
+    {
+      tag: 'React',
+      image:
+        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      title: 'React Project 1',
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Angular',
+      image:
+        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      title: 'Angular Project 1',
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Python',
+      image:
+        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      title: 'Python Project 1',
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'SQL',
+      image:
+        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      title: 'SQL Project 1',
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <YouTube /> },
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+  ],
 };
 
 export default resumeData;
