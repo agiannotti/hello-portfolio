@@ -1,9 +1,18 @@
 import { Language } from '@material-ui/icons';
+import DnsTwoToneIcon from '@material-ui/icons/DnsTwoTone';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import DnsTwoToneIcon from '@material-ui/icons/DnsTwoTone';
-import WebTwoToneIcon from '@material-ui/icons/WebTwoTone';
 import SettingsEthernetTwoToneIcon from '@material-ui/icons/SettingsEthernetTwoTone';
+import WebTwoToneIcon from '@material-ui/icons/WebTwoTone';
+
+import consoleMain1 from '../assets/images/console.main1.png';
+import foodfulMain1 from '../assets/images/foodful.main1.png';
+import latinlyMain1 from '../assets/images/latinly.main1.png';
+import bookmarkedMain1 from '../assets/images/bookmarked.main1.png';
+import eztaskMain1 from '../assets/images/eztask.main1.png';
+import thinkboardMain1 from '../assets/images/thinkboard.main1.png';
+import pattern3 from '../assets/images/pattern3.jpg';
+import quizMain1 from '../assets/images/quiz.main1.png';
 
 const resumeData = {
   name: 'Anthony Giannotti',
@@ -113,7 +122,7 @@ const resumeData = {
   projects: [
     {
       tag: 'React',
-      image: '',
+      image: pattern3,
       title: 'React Project 1',
       caption: 'A short description',
       description:
@@ -125,8 +134,7 @@ const resumeData = {
     },
     {
       tag: 'Angular',
-      image:
-        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      image: foodfulMain1,
       title: 'Angular Project 1',
       caption: 'A short description',
 
@@ -139,8 +147,7 @@ const resumeData = {
     },
     {
       tag: 'Python',
-      image:
-        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
+      image: consoleMain1,
       title: 'Python Project 1',
       caption: 'A short description',
 
@@ -152,10 +159,61 @@ const resumeData = {
       ],
     },
     {
-      tag: 'SQL',
-      image:
-        'https://en.wikipedia.org/wiki/Wallpaper_(computing)#/media/File:Animated_Wallpaper_Windows_10_-_Wallpaper_Engine.gif',
-      title: 'SQL Project 1',
+      tag: 'React',
+      image: bookmarkedMain1,
+      title: 'React Project 1',
+      caption: 'A short description',
+
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image: latinlyMain1,
+      title: 'React Project 2',
+      caption: 'A short description',
+
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image: eztaskMain1,
+      title: 'React Project 3',
+      caption: 'A short description',
+
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image: quizMain1,
+      title: 'React Project 4',
+      caption: 'A short description',
+
+      description:
+        'words wordswords wordswords wordswords wordswords wordswords words',
+      links: [
+        { link: 'https://www.google.com', icon: <GitHubIcon /> },
+        { link: 'https://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Angular',
+      image: thinkboardMain1,
+      title: 'Angular Project 2',
       caption: 'A short description',
 
       description:
