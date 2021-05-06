@@ -25,15 +25,17 @@ function App() {
             <Header />
             <div className='main_content container_shadow'>
               <Switch>
+                <Route exact path='/'>
+                  <Resume />
+                </Route>
                 <Route path='/portfolio'>
                   <Portfolio />
                 </Route>
-                <Route path='/'>
-                  <Resume />
-                </Route>
+
                 <Route path='/contact'>
                   <Contact />
                 </Route>
+
                 <Route path='/blog'>
                   <Blog />
                 </Route>

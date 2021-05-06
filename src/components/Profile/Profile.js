@@ -5,7 +5,7 @@ import React from 'react';
 
 import resumeData from '../../utils/resumeData';
 import BasicTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline';
-import face from './../../assets/images/soho-self-square.png';
+import face from './../../assets/images/soho-self-square.jpg';
 import PersonTwoToneIcon from '@material-ui/icons/PersonTwoTone';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
