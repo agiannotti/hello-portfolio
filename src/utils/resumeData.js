@@ -1,6 +1,9 @@
-import { Language, WebOutlined } from '@material-ui/icons';
+import { Language } from '@material-ui/icons';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import DnsTwoToneIcon from '@material-ui/icons/DnsTwoTone';
+import WebTwoToneIcon from '@material-ui/icons/WebTwoTone';
+import SettingsEthernetTwoToneIcon from '@material-ui/icons/SettingsEthernetTwoTone';
 
 const resumeData = {
   name: 'Anthony Giannotti',
@@ -10,68 +13,62 @@ const resumeData = {
   email: 'aj.gianno@gmail.com',
   address: 'Chicago, Illinois',
   phone: '(850)-408-4674',
-  about: `Proficient with Python, JavaScript, TypeScript, React, Angular, Node, Express, and SQL.
-
-    \nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.
-    
-    \nAs a software developer, I highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
+  about: `Proficient with Python, JavaScript, TypeScript, React, Angular, Node, Express, and SQL.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nAs a software developer, I highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
 
   experiences: [
     {
-      title: 'Work1',
-      date: '2020 - 2021',
-      description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+      title: 'Pastry and Bakery Cook / Soho House Chicago',
+      date: 'September 2019 - September 2021',
+      description: 'Sourdough & Croissants',
     },
     {
-      title: 'Work2',
+      title: 'Sous Chef / Tasty N Alder',
       date: '2019 - 2020',
-      description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+      description: 'Breakfast & Brunch Restaurant',
     },
     {
-      title: 'Work3',
-      date: '2018 - 2019',
-      description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+      title: 'Commis Chef / Next Restaurant',
+      date: 'February 2018 - January 2019',
+      description: 'Michelin starred Restaurant in Fulton Market, Chicago',
     },
   ],
 
   educations: [
     {
-      title: 'Education1',
-      date: '2020 - 2021',
+      title: 'Thinkful Engineering Immersion Certificate',
+      date: 'Nov 2020 - April 2021',
       description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+        'Javascript, CSS, HTML, React, Node, SQL, Jquery, data structures & algorithms.',
     },
     {
-      title: 'Education2',
-      date: '2019 - 2020',
+      title: 'Google UX Design Certificate',
+      date: 'April 2021 - March 2021',
       description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+        ' Developed fundamentals of translating a design’s intent into a functional experience',
     },
     {
-      title: 'Education3',
-      date: '2018 - 2019',
-      description:
-        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+      title: 'Tallahassee Community College & Portland State University',
+      date: '2012-2015 / 2018',
+      description: 'Education & English Studies',
     },
   ],
   services: [
     {
       title: 'Front-End',
-      description: 'reach 10x dev status in 6 months',
-      icon: <WebOutlined />,
+      description:
+        'Responsive and Dynamic sites utilizing the latest trends in web development',
+      icon: <WebTwoToneIcon />,
     },
     {
       title: 'Back-end',
-      description: 'reach 10x dev status in 6 months',
-      icon: <WebOutlined />,
+      description: 'RESTFul from-sratch APIs and Database Provisioning ',
+      icon: <SettingsEthernetTwoToneIcon />,
     },
     {
       title: 'UX Design',
-      description: 'reach 10x dev status in 6 months',
-      icon: <WebOutlined />,
+      description:
+        'understandings users and learning about their backgrounds, demographics, motivations, pain points, emotions, and life goals',
+      icon: <DnsTwoToneIcon />,
     },
   ],
 
@@ -104,12 +101,12 @@ const resumeData = {
   socials: {
     GitHub: {
       link: 'https://github.com/agiannotti',
-      text: 'GitHub',
+      text: 'GitHub.com/agiannotti',
       icon: <GitHubIcon />,
     },
     LinkedIn: {
       link: 'https://www.linkedin.com/in/agiannotti/',
-      text: 'LinkedIn',
+      text: 'LinkedIn.com/in/agiannotti',
       icon: <LinkedInIcon />,
     },
   },

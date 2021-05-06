@@ -1,6 +1,6 @@
 import './Profile.css';
 
-import { Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 
 import resumeData from '../../utils/resumeData';
@@ -35,37 +35,39 @@ const CustomTimelineItem = ({ title, text, link }) => (
 
 const Profile = () => {
   return (
-    <div className='profile container_shadow'>
-      <div className='profile_name'>
-        <Typography className='name'>{resumeData.name}</Typography>
-        <Typography className='title'>{resumeData.title}</Typography>
-      </div>
-      <figure className='profile_image'>
-        <img src={face} alt='face' />
-      </figure>
+    <Grid container>
+      <div className='profile container_shadow'>
+        <div className='profile_name'>
+          <Typography className='name'>{resumeData.name}</Typography>
+          <Typography className='title'>{resumeData.title}</Typography>
+        </div>
+        <figure className='profile_image'>
+          <img src={face} alt='face' />
+        </figure>
 
-      <div className='profile_information'>
-        <BasicTimeline icon={<PersonTwoToneIcon />} title={resumeData.title}>
-          <CustomTimelineItem title='Name' text={resumeData.name} />
-          <CustomTimelineItem title='Title' text={resumeData.title} />
-          <CustomTimelineItem title='Email' text={resumeData.email} />
-          <CustomTimelineItem title='Address' text={resumeData.address} />
-          <CustomTimelineItem title='Phone' text={resumeData.phone} />
+        <div className='profile_information'>
+          <BasicTimeline icon={<PersonTwoToneIcon />} title={resumeData.title}>
+            <CustomTimelineItem title='Name' text={resumeData.name} />
+            <CustomTimelineItem title='Title' text={resumeData.title} />
+            <CustomTimelineItem title='Email' text={resumeData.email} />
+            <CustomTimelineItem title='Address' text={resumeData.address} />
+            <CustomTimelineItem title='Phone' text={resumeData.phone} />
 
-          {Object.keys(resumeData.socials).map((key) => (
-            <CustomTimelineItem
-              title={key}
-              text={resumeData.socials[key].text}
-              link={resumeData.socials[key].link}
-            />
-          ))}
-        </BasicTimeline>
+            {Object.keys(resumeData.socials).map((key) => (
+              <CustomTimelineItem
+                title={key}
+                text={resumeData.socials[key].text}
+                link={resumeData.socials[key].link}
+              />
+            ))}
+          </BasicTimeline>
 
-        <div className='btn_container'>
-          <MuiButton text={'Download Cv'} icon={<GetAppTwoToneIcon />} />
+          <div className='btn_container'>
+            <MuiButton text={'Download Cv'} icon={<GetAppTwoToneIcon />} />
+          </div>
         </div>
       </div>
-    </div>
+    </Grid>
   );
 };
 
