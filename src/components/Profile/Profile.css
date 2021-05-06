@@ -45,11 +45,23 @@
 }
 
 .timelineItem_text {
-  font-size: 13.5px;
+  font-size: 13.5px !important;
   color: #424242;
-  font-weight: 400;
+  font-weight: 400 !important;
+}
+.timelineItem_text > a {
+  color: #424242;
+  text-decoration: none;
 }
 
 .timelineItem_text > span {
   color: black;
+}
+
+.profile .btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
 }

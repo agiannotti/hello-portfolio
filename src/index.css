@@ -4,6 +4,8 @@
 
 body {
   background: #fafafa;
-  overflow: hidden;
+  overflow-x: hidden;
   background: url('./assets/images/pattern3.jpg');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoorhing: grayscale;
 }

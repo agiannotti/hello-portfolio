@@ -1,3 +1,4 @@
+import { WebOutlined } from '@material-ui/icons';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -9,6 +10,96 @@ const resumeData = {
   email: 'aj.gianno@gmail.com',
   address: 'Chicago, Illinois',
   phone: '(850)-408-4674',
+  about: `Proficient with Python, JavaScript, TypeScript, React, Angular, Node, Express, and SQL.
+
+    \nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.
+    
+    \nAs a software developer, I highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
+
+  experiences: [
+    {
+      title: 'Work1',
+      date: '2020 - 2021',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+    {
+      title: 'Work2',
+      date: '2019 - 2020',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+    {
+      title: 'Work3',
+      date: '2018 - 2019',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+  ],
+
+  educations: [
+    {
+      title: 'Education1',
+      date: '2020 - 2021',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+    {
+      title: 'Education2',
+      date: '2019 - 2020',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+    {
+      title: 'Education3',
+      date: '2018 - 2019',
+      description:
+        'Experiences Experiences Experiences Experiences Experiences Experiences Experiences Experiences ',
+    },
+  ],
+  services: [
+    {
+      title: 'Front-End',
+      description: 'reach 10x dev status in 6 months',
+      icon: <WebOutlined />,
+    },
+    {
+      title: 'Back-end',
+      description: 'reach 10x dev status in 6 months',
+      icon: <WebOutlined />,
+    },
+    {
+      title: 'UX Design',
+      description: 'reach 10x dev status in 6 months',
+      icon: <WebOutlined />,
+    },
+  ],
+
+  skills: [
+    {
+      title: 'FRONT-END',
+      description: [
+        'JavaScript',
+        'React',
+        'TypeScript',
+        'Angular',
+        'Bootstrap',
+        'Material UI',
+      ],
+    },
+    {
+      title: 'BACK-END',
+      description: ['NodeJS', 'JavaScript', 'Python', 'Express'],
+    },
+    {
+      title: 'DATABASES',
+      description: ['FireBase', 'PostgreSQL', 'Heroku'],
+    },
+    {
+      title: 'SOURCE CONTROL',
+      description: ['Git', 'GitHub', 'Agile/SCRUM'],
+    },
+  ],
 
   socials: {
     GitHub: {
