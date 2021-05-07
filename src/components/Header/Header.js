@@ -6,7 +6,7 @@ import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // import GitHubIcon from '@material-ui/icons/GitHub';
 import resumeData from '../../utils/resumeData';
-import MuiButton from '../Button/MuiButton';
+// import MuiButton from '../Button/MuiButton';
 import './Header.css';
 
 import {
@@ -17,7 +17,7 @@ import {
   Navbar,
   // NavDropdown,
 } from 'react-bootstrap';
-import { Telegram } from '@material-ui/icons';
+// import { Telegram } from '@material-ui/icons';
 
 const Header = (props) => {
   const pathName = props?.location?.pathname;
@@ -50,7 +50,7 @@ const Header = (props) => {
               pathName === '/portfolio' ? 'header_link_active' : 'header_link'
             }
           >
-            Portfolio
+            Projects
           </Nav.Link>
 
           {/* Contact Link */}

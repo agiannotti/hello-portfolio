@@ -64,8 +64,7 @@ const resumeData = {
   services: [
     {
       title: 'Front-End',
-      description:
-        'Responsive and Dynamic sites utilizing the latest trends in web development',
+      description: 'Responsive and Dynamic applications',
       icon: <WebTwoToneIcon />,
     },
     {
@@ -75,8 +74,7 @@ const resumeData = {
     },
     {
       title: 'UX Design',
-      description:
-        'understanding users and empathizing with different backgrounds, demographics, motivations, pain points, emotions, and life goals',
+      description: 'Provide insight into combining a',
       icon: <DnsTwoToneIcon />,
     },
   ],
