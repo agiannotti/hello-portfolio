@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       {/* Contact */}
-      <Grid container spacing={2} className='section pt_45 pb_45 ml_15'>
+      <Grid container spacing={2} className='section pt_45 pb_45'>
         {/* Contact Form */}
         <Grid item xs={12} lg={7}>
           <Grid container>
