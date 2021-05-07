@@ -68,7 +68,7 @@ const Profile = () => {
             rel='noreferrer'
             href='https://www.dropbox.com/s/64v0sjyf394h8ob/AG_Resume.pdf?dl=0'
           >
-            <MuiButton text={'Download Cv'} icon={<GetAppTwoToneIcon />} />
+            <MuiButton text={'Dropbox Cv'} icon={<GetAppTwoToneIcon />} />
           </a>
         </div>
       </div>

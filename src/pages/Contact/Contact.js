@@ -20,14 +20,14 @@ const Contact = () => {
             </Grid>
 
             <Grid item xs={12}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
+              <Grid container spacing={3}>
+                <Grid item xs={12} sm={5}>
                   <TextField fullWidth name='name' label='Name'></TextField>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={5}>
                   <TextField fullWidth name='email' label='E-mail'></TextField>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={5}>
                   <TextField
                     fullWidth
                     name='message'

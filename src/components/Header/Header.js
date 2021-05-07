@@ -52,16 +52,7 @@ const Header = (props) => {
           >
             Portfolio
           </Nav.Link>
-          {/* Blog Link */}
-          <Nav.Link
-            as={NavLink}
-            to='/blog'
-            className={
-              pathName === '/blog' ? 'header_link_active' : 'header_link'
-            }
-          >
-            Blog
-          </Nav.Link>
+
           {/* Contact Link */}
           <Nav.Link
             as={NavLink}
@@ -83,7 +74,7 @@ const Header = (props) => {
               {resumeData.socials[key].icon}
             </a>
           ))}
-          <MuiButton text={'Hire me'} icon={<Telegram />} />
+          {/* <MuiButton text={'Hire me'} icon={<Telegram />} /> */}
         </div>
       </Navbar.Collapse>
     </Navbar>
