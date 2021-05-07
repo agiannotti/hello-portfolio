@@ -129,7 +129,7 @@ const Resume = () => {
 
       <Grid item xs={12}>
         <Grid container className='section graybg pb_45 p_50'>
-          <Grid container justify='space-between'>
+          <Grid container justify='space-between' spacing={2}>
             {resumeData.skills.map((skill) => (
               <Grid item xs={12} sm={6} md={3}>
                 <Paper elevation={0} className='skill'>

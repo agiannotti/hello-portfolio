@@ -53,7 +53,7 @@ const resumeData = {
       title: 'Google UX Design Certificate',
       date: 'April 2021 - March 2021',
       description:
-        ' Developed fundamentals of translating a design’s intent into a functional experience',
+        'Developed fundamentals of translating a design’s intent into a functional experience. Focusing on real user problems reduces the impact of designer bias.',
     },
     {
       title: 'Tallahassee Community College & Portland State University',
@@ -64,7 +64,8 @@ const resumeData = {
   services: [
     {
       title: 'Front-End',
-      description: 'Responsive and Dynamic applications',
+      description:
+        'Responsive and Dynamic sites utilizing the latest technologies in web development',
       icon: <WebTwoToneIcon />,
     },
     {
@@ -74,7 +75,8 @@ const resumeData = {
     },
     {
       title: 'UX Design',
-      description: 'Provide insight into combining a',
+      description:
+        'Developed fundamentals of translating a design’s intent into a functional experience',
       icon: <DnsTwoToneIcon />,
     },
   ],
