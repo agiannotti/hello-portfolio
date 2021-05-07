@@ -1,13 +1,13 @@
-import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
-import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
+import React from "react";
+import { NavLink, withRouter } from "react-router-dom";
+import HomeTwoToneIcon from "@material-ui/icons/HomeTwoTone";
 // import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 // import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // import GitHubIcon from '@material-ui/icons/GitHub';
-import resumeData from '../../utils/resumeData';
-import MuiButton from '../Button/MuiButton';
-import './Header.css';
+import resumeData from "../../utils/resumeData";
+// import MuiButton from '../Button/MuiButton';
+import "./Header.css";
 
 import {
   // Button,
@@ -16,38 +16,38 @@ import {
   Nav,
   Navbar,
   // NavDropdown,
-} from 'react-bootstrap';
-import { Telegram } from '@material-ui/icons';
+} from "react-bootstrap";
+// import { Telegram } from '@material-ui/icons';
 
 const Header = (props) => {
   const pathName = props?.location?.pathname;
 
   return (
-    <Navbar expand='lg' sticky='top' className='header'>
+    <Navbar expand="lg" sticky="top" className="header">
       {/* Home Link */}
-      <Nav.Link as={NavLink} to='/' className='header_navlink'>
-        <Navbar.Brand className='header_home'>
-          <HomeTwoToneIcon />
+      <Nav.Link as={NavLink} to="/" className="header_navlink">
+        <Navbar.Brand className="header_home">
+          <HomeTwoToneIcon style={{ color: "white" }} />
         </Navbar.Brand>
       </Nav.Link>
 
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav className='header_left'>
+        <Nav className="header_left">
           {/* Resume Link */}
           <Nav.Link
             as={NavLink}
-            to='/'
-            className={pathName === '/' ? 'header_link_active' : 'header_link'}
+            to="/"
+            className={pathName === "/" ? "header_link_active" : "header_link"}
           >
             Resume
           </Nav.Link>
           {/* Portfolio Link */}
           <Nav.Link
             as={NavLink}
-            to='/portfolio'
+            to="/portfolio"
             className={
-              pathName === '/portfolio' ? 'header_link_active' : 'header_link'
+              pathName === "/portfolio" ? "header_link_active" : "header_link"
             }
           >
             Portfolio
@@ -56,20 +56,20 @@ const Header = (props) => {
           {/* Contact Link */}
           <Nav.Link
             as={NavLink}
-            to='/contact'
+            to="/contact"
             className={
-              pathName === '/contact' ? 'header_link_active' : 'header_link'
+              pathName === "/contact" ? "header_link_active" : "header_link"
             }
           >
             Contact
           </Nav.Link>
         </Nav>
-        <div className='header_right'>
+        <div className="header_right">
           {Object.keys(resumeData.socials).map((key) => (
             <a
               href={resumeData.socials[key].link}
-              target='_blank'
-              rel='noreferrer'
+              target="_blank"
+              rel="noreferrer"
             >
               {resumeData.socials[key].icon}
             </a>
