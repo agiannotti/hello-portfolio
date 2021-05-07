@@ -22,7 +22,7 @@ const resumeData = {
   email: 'aj.gianno@gmail.com',
   address: 'Chicago, Illinois',
   phone: '(850)-408-4674',
-  about: `Proficient with JavaScript, TypeScript, React, Angular, Node, Express, and SQL.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nAs a software developer, I highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
+  about: `Proficient with JavaScript, TypeScript, React, Angular, and Node.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nAs a software developer, I highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
 
   experiences: [
     {
