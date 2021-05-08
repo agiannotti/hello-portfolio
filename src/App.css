@@ -64,9 +64,9 @@
 
 .main_content {
   background-color: #fff;
-  border-radius: 6px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 12px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
 }
 
 .section_title {
