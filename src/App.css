@@ -33,15 +33,16 @@
   padding: 50px !important;
 }
 .pt_45 {
-  padding-top: 45px !important;
+  padding-top: 35px !important;
 }
 
 .pr_35 {
   padding-right: 35px !important;
 }
-
-.pl_25 {
-  padding-left: 25px;
+@media (max-width: 450px) {
+  .pl_25 {
+    padding-left: 25px !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -49,7 +50,7 @@
     margin-top: 30px !important;
   }
   .ml_15 {
-    padding-left: 15px !important;
+    margin-left: 60px !important;
   }
 }
 
@@ -75,7 +76,7 @@
   margin-bottom: 20px;
 }
 
-.section_title span {
+.section_title > span {
   position: absolute;
   height: 7px;
   width: 100%;
@@ -85,6 +86,12 @@
   background-color: var(--main-color);
   margin-bottom: 4px;
   border-radius: 12px;
+}
+
+@media (min-width: 450px) {
+  .about_span {
+    margin-left: 75px;
+  }
 }
 
 .section_title .section_typography {

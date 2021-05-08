@@ -5,6 +5,13 @@
   font: small !important;
   line-height: 22px !important;
   white-space: pre-line !important;
+  width: 85%;
+}
+
+.about_container {
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important;
 }
 
 /* End of About me */
