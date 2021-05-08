@@ -5,7 +5,7 @@ import resumeData from '../../utils/resumeData';
 import BasicTimeline, {
   CustomTimelineSeparator,
 } from '../../components/Timeline/Timeline';
-import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
+// import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
@@ -15,33 +15,34 @@ const Resume = () => {
   return (
     <>
       {/* About Me */}
-      <Grid container className='section pb_45 pt_45 ml_15'>
-        <Grid item className='section_title mb_30'>
-          <span></span>
-          <Typography className='section_typography' variant='h6'>
-            About Me
-          </Typography>
-        </Grid>
-        <Grid item xs={12}></Grid>
-        <Typography variant='body2' className='aboutme_text'>
-          {resumeData.about}
-        </Typography>
-      </Grid>
 
       {/* Education and experiences */}
       <Grid container className='section pb_45'>
-        <Grid item className='section_title mb_30 ml_15'>
+        <Grid item className='section_title mb_30 '>
           <span></span>
-          <Typography className='section_typography' variant='h6'>
+          {/* <Typography className='section_typography' variant='h6'>
             Resume
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <Grid container spacing={0} className='resume_timeline pb_45 ml_15'>
+        <Grid container spacing={0} className='resume_timeline pb_45'>
           {/* Experience */}
           <Grid item xs={12} md={6}>
-            <BasicTimeline title={'Work Experience'} icon={<WorkTwoToneIcon />}>
+            <Grid container className='section pb_45 '>
+              <Grid item className='section_title mb_30'>
+                <span></span>
+                <Typography className='section_typography' variant='h6'>
+                  About Me
+                </Typography>
+              </Grid>
+              <Grid item xs={12}></Grid>
+              <Typography variant='body2' className='aboutme_text pr_35'>
+                {resumeData.about}
+              </Typography>
+            </Grid>
+
+            {/* <BasicTimeline title={'Work Experience'} icon={<WorkTwoToneIcon />}>
               {resumeData.experiences.map((exp) => (
                 <TimelineItem>
                   <CustomTimelineSeparator></CustomTimelineSeparator>
@@ -62,19 +63,19 @@ const Resume = () => {
                   </TimelineContent>
                 </TimelineItem>
               ))}
-            </BasicTimeline>
+            </BasicTimeline> */}
           </Grid>
 
           {/* Education */}
           <Grid item xs={12} md={5}>
-            <Grid container className='resume_timeline'>
+            <Grid container spacing={10} className='resume_timeline p_30 '>
               <BasicTimeline title={'Education'} icon={<SchoolTwoToneIcon />}>
                 {resumeData.educations.map((edu) => (
                   <TimelineItem>
                     <CustomTimelineSeparator></CustomTimelineSeparator>
 
-                    <TimelineContent className='timeline_content'>
-                      <Typography className='timeline_title'>
+                    <TimelineContent className='timeline_content '>
+                      <Typography className='timeline_title '>
                         {edu.title}
                       </Typography>
                       <Typography variant='caption' className='timeline_date'>
@@ -82,7 +83,7 @@ const Resume = () => {
                       </Typography>
                       <Typography
                         variant='body2'
-                        className='timeline_description'
+                        className='timeline_description '
                       >
                         {edu.description}
                       </Typography>

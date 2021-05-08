@@ -41,7 +41,7 @@ const Header = (props) => {
             to='/'
             className={pathName === '/' ? 'header_link_active' : 'header_link'}
           >
-            Resume
+            About
           </Nav.Link>
           {/* Portfolio Link */}
           <Nav.Link

@@ -9,7 +9,6 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Profile from './components/Profile/Profile';
 import Resume from './pages/Resume/Resume';
 import Contact from './pages/Contact/Contact';
-import Blog from './pages/Blog/Blog';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -31,13 +30,8 @@ function App() {
                 <Route path='/portfolio'>
                   <Portfolio />
                 </Route>
-
                 <Route path='/contact'>
                   <Contact />
-                </Route>
-
-                <Route path='/blog'>
-                  <Blog />
                 </Route>
               </Switch>
             </div>
