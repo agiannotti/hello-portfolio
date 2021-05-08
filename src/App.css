@@ -25,10 +25,6 @@
   margin-bottom: 30px !important;
 }
 
-.ml_15 {
-  margin-left: 25px !important;
-}
-
 .pb_45 {
   padding-bottom: 45px !important;
 }
@@ -43,6 +39,9 @@
 @media (max-width: 991px) {
   .top_60 {
     margin-top: 30px !important;
+  }
+  .ml_15 {
+    padding-left: 15px !important;
   }
 }
 
