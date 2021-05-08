@@ -36,6 +36,14 @@
   padding-top: 45px !important;
 }
 
+.pr_35 {
+  padding-right: 35px !important;
+}
+
+.pl_25 {
+  padding-left: 25px;
+}
+
 @media (max-width: 991px) {
   .top_60 {
     margin-top: 30px !important;
@@ -55,9 +63,7 @@
 
 .main_content {
   background-color: #fff;
-  min-height: 100vh;
   border-radius: 6px;
-
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }

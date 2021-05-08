@@ -31,7 +31,7 @@ const Portfolio = () => {
             variant='h6'
             className='section_title_text section_typography'
           >
-            Portfolio
+            Projects
           </Typography>
         </Grid>
         {/* Tabs */}
