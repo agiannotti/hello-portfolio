@@ -1,6 +1,6 @@
 import './Resume.css';
 
-import { Grid, Icon, Paper, Typography } from '@material-ui/core';
+import { Grid, Icon, makeStyles, Paper, Typography } from '@material-ui/core';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
@@ -12,8 +12,22 @@ import BasicTimeline, {
 } from '../../components/Timeline/Timeline';
 import resumeData from '../../utils/resumeData';
 
+const useStyles = makeStyles({
+  cardBorder: {
+    borderRadius: '14px',
+    padding: '20px',
+    boxShadow: '0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important',
+    minHeight: '186px',
+    height: '100%',
+  },
+  gridRadius: {
+    borderRadius: '14px',
+  },
+});
+
 // import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 const Resume = () => {
+  const classes = useStyles();
   return (
     <>
       {/* About Me */}
@@ -103,7 +117,7 @@ const Resume = () => {
           <span></span>
           <Typography
             variant='h6'
-            className='section_title_text section_typography '
+            className='section_title_text section_typography'
           ></Typography>
         </Grid>
 
@@ -127,12 +141,12 @@ const Resume = () => {
       </Grid>
       {/* Skills */}
 
-      <Grid item xs={12}>
+      <Grid item xs={12} className={classes.gridRadius}>
         <Grid container className='section graybg pb_45 p_50'>
-          <Grid container justify='space-between' spacing={2}>
+          <Grid container justify='space-between' spacing={3}>
             {resumeData.skills.map((skill) => (
               <Grid item xs={12} sm={6} md={3}>
-                <Paper elevation={0} className='skill'>
+                <Paper elevation={0} className={classes.cardBorder}>
                   <Typography variant='h6' className='skill_title'>
                     {skill.title}
                   </Typography>
