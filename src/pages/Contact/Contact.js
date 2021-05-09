@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Grid, TextField, Typography } from "@material-ui/core";
 // import React, { useState } from 'react';
 import { Form } from "react-bootstrap";
@@ -12,11 +13,21 @@ const Contact = () => {
     // console.log('hello', emailSent);
   };
 
+=======
+import { Grid, Typography } from '@material-ui/core';
+// import React, { useState } from 'react';
+import resumeData from '../../utils/resumeData';
+import './Contact.css';
+import ContactForm from './ContactForm';
+
+const Contact = () => {
+>>>>>>> 9d0811f850c7755631bd97d991749792118d4a53
   return (
     <>
       {/* Contact */}
       <Grid container spacing={2} className="section pt_45 pb_45">
         {/* Contact Form */}
+<<<<<<< HEAD
         <Form onSubmit={handleSubmit()}>
           <Grid item xs={12} lg={7}>
             <Grid container>
@@ -59,6 +70,9 @@ const Contact = () => {
             </Grid>
           </Grid>
         </Form>
+=======
+        <ContactForm />
+>>>>>>> 9d0811f850c7755631bd97d991749792118d4a53
         {/* Contact Information */}
         <Grid item xs={12} lg={5}>
           <Grid container>
@@ -97,6 +111,7 @@ const Contact = () => {
               </Grid>
             </Grid>
             <Grid item xs={12}>
+<<<<<<< HEAD
               <Grid container className="contactInfo_socialsContainer ml_15">
                 {Object.keys(resumeData.socials).map((key) => (
                   <Grid item className="contactInfo_social">
@@ -104,6 +119,17 @@ const Contact = () => {
                       {resumeData.socials[key].icon}
                     </a>
                   </Grid>
+=======
+              <Grid container className='contactInfo_socialsContainer ml_15'>
+                {Object.keys(resumeData.socials).map((item, index) => (
+                  <div key={index}>
+                    <Grid item className='contactInfo_social'>
+                      <a href={resumeData.socials[item].link}>
+                        {resumeData.socials[item].icon}
+                      </a>
+                    </Grid>
+                  </div>
+>>>>>>> 9d0811f850c7755631bd97d991749792118d4a53
                 ))}
               </Grid>
             </Grid>

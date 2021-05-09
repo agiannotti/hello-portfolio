@@ -1,23 +1,18 @@
-import React from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import './Header.css';
+
 import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
+import { NavLink, withRouter } from 'react-router-dom';
+
+import resumeData from '../../utils/resumeData';
+
 // import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
 // import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // import GitHubIcon from '@material-ui/icons/GitHub';
 
-import resumeData from '../../utils/resumeData';
-// import MuiButton from '../Button/MuiButton';
-import './Header.css';
-
-import {
-  // Button,
-  // Form,
-  // FormControl,
-  Nav,
-  Navbar,
-  // NavDropdown,
-} from 'react-bootstrap';
+// import Button from '../Button/Button';
 // import { Telegram } from '@material-ui/icons';
 
 const Header = (props) => {
@@ -66,16 +61,18 @@ const Header = (props) => {
           </Nav.Link>
         </Nav>
         <div className='header_right'>
-          {Object.keys(resumeData.socials).map((key) => (
-            <a
-              href={resumeData.socials[key].link}
-              target='_blank'
-              rel='noreferrer'
-            >
-              {resumeData.socials[key].icon}
-            </a>
+          {Object.keys(resumeData.socials).map((item, index) => (
+            <div key={index}>
+              <a
+                href={resumeData.socials[item].link}
+                target='_blank'
+                rel='noreferrer'
+              >
+                {resumeData.socials[item].icon}
+              </a>
+            </div>
           ))}
-          {/* <MuiButton text={'Hire me'} icon={<Telegram />} /> */}
+          {/* <Button text={'Hire me'} icon={<Telegram />} /> */}
         </div>
       </Navbar.Collapse>
     </Navbar>

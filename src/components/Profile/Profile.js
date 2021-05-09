@@ -9,7 +9,7 @@ import face from './../../assets/images/soho-self-square.jpg';
 import PersonTwoToneIcon from '@material-ui/icons/PersonTwoTone';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
-import MuiButton from '../Button/MuiButton';
+import Button from '../Button/Button';
 import GetAppTwoToneIcon from '@material-ui/icons/GetAppTwoTone';
 
 const CustomTimelineItem = ({ title, text, link }) => (
@@ -53,12 +53,14 @@ const Profile = () => {
             <CustomTimelineItem title='Address' text={resumeData.address} />
             <CustomTimelineItem title='Phone' text={resumeData.phone} />
 
-            {Object.keys(resumeData.socials).map((key) => (
-              <CustomTimelineItem
-                title={key}
-                text={resumeData.socials[key].text}
-                link={resumeData.socials[key].link}
-              />
+            {Object.keys(resumeData.socials).map((item, index) => (
+              <div key={index}>
+                <CustomTimelineItem
+                  title={item}
+                  text={resumeData.socials[item].text}
+                  link={resumeData.socials[item].link}
+                />
+              </div>
             ))}
           </BasicTimeline>
 
@@ -68,7 +70,7 @@ const Profile = () => {
             rel='noreferrer'
             href='https://www.dropbox.com/s/64v0sjyf394h8ob/AG_Resume.pdf?dl=0'
           >
-            <MuiButton text={'Dropbox Cv'} icon={<GetAppTwoToneIcon />} />
+            <Button text={'Dropbox Cv'} icon={<GetAppTwoToneIcon />} />
           </a>
         </div>
       </div>

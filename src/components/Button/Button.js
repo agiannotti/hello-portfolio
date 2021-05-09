@@ -1,16 +1,17 @@
-import { Button } from '@material-ui/core';
-import React from 'react';
-import './MuiButton.css';
+import './Button.css';
 
-const MuiButton = ({ text, icon }) => {
+import { Button as MuiButton } from '@material-ui/core';
+import React from 'react';
+
+const Button = ({ text, icon }) => {
   return (
-    <Button
+    <MuiButton
       className='custom_btn'
       endIcon={icon ? <div className='btn_icon_container'>{icon}</div> : null}
     >
       <span className='btn_text'>{text}</span>
-    </Button>
+    </MuiButton>
   );
 };
 
-export default MuiButton;
+export default Button;
