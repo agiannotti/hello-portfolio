@@ -20,9 +20,6 @@ const useStyles = makeStyles({
     minHeight: '186px',
     height: '100%',
   },
-  gridRadius: {
-    borderRadius: '14px',
-  },
 });
 
 // import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
@@ -141,7 +138,7 @@ const Resume = () => {
       </Grid>
       {/* Skills */}
 
-      <Grid item xs={12} className={classes.gridRadius}>
+      <Grid item xs={12}>
         <Grid container className='section graybg pb_45 p_50'>
           <Grid container justify='space-between' spacing={3}>
             {resumeData.skills.map((skill) => (
