@@ -2,6 +2,14 @@ import { Grid, TextField, Typography } from '@material-ui/core';
 // import React, { useState } from 'react';
 import Button from '../../components/Button/Button';
 
+const initialValues = {
+  id: 0,
+  fullName: '',
+  email: '',
+  Message: '',
+  isSent: false,
+};
+
 const ContactForm = () => {
   // const [emailSent, setEmailValue] = useState(false);
 
@@ -26,22 +34,14 @@ const ContactForm = () => {
               <Grid item xs={12}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} sm={5}>
-                    <TextField
-                      fullwidth={'true'}
-                      name='name'
-                      label='Name'
-                    ></TextField>
+                    <TextField fullwidth='true' name='name' label='Name' />
+                  </Grid>
+                  <Grid item xs={12} sm={5}>
+                    <TextField fullwidth='true' name='email' label='E-mail' />
                   </Grid>
                   <Grid item xs={12} sm={5}>
                     <TextField
-                      fullwidth={'true'}
-                      name='email'
-                      label='E-mail'
-                    ></TextField>
-                  </Grid>
-                  <Grid item xs={12} sm={5}>
-                    <TextField
-                      fullwidth={'true'}
+                      fullwidth='true'
                       name='message'
                       label='Message'
                       multiline
@@ -49,7 +49,7 @@ const ContactForm = () => {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                    <Button text={'Submit'} />
+                    <Button text='Submit' />
                   </Grid>
                 </Grid>
               </Grid>
