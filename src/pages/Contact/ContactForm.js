@@ -1,4 +1,4 @@
-import { Grid, TextField, Typography } from '@material-ui/core';
+import { Grid, TextField, Typography, FormControl } from '@material-ui/core';
 // import React, { useState } from 'react';
 import Button from '../../components/Button/Button';
 import { UseForm, Form } from '../../components/utils/UseForm';
@@ -15,8 +15,12 @@ const ContactForm = () => {
   // const [emailSent, setEmailValue] = useState(false);
   const { values, handleInputChange } = UseForm(initialValues);
 
+  const onSubmit = () => {
+    console.log('Submitted!');
+  };
+
   return (
-    <Form>
+    <FormControl onSubmit={onSubmit}>
       <Grid item xs={12} lg={7}>
         <Grid container>
           <Grid item className='section_title mb_30 top_30'>
@@ -58,13 +62,13 @@ const ContactForm = () => {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Button text='Submit' />
+                <Button type='submit' text='Submit' />
               </Grid>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-    </Form>
+    </FormControl>
   );
 };
 

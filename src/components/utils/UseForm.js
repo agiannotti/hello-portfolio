@@ -5,6 +5,7 @@ export const UseForm = (initialValues) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    console.log(value);
     setValues({
       ...values,
       [name]: value,
@@ -15,8 +16,4 @@ export const UseForm = (initialValues) => {
     setValues,
     handleInputChange,
   };
-};
-
-export const Form = (props) => {
-  return <form>{props.children}</form>;
 };
