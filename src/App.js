@@ -10,9 +10,6 @@ import Profile from './components/Profile/Profile';
 import Contact from './pages/Contact/Contact';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Resume from './pages/Resume/Resume';
-import firebaseConfig from './environment/firebaseConfig';
-
-firebaseConfig.initializeApp(firebaseConfig);
 
 function App() {
   return (

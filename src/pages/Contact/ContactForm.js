@@ -1,9 +1,8 @@
 import { Grid, TextField, Typography } from '@material-ui/core';
-
-import Button from '../../components/Button/Button';
-import { UseForm } from '../../components/utils/UseForm';
-
 // import React, { useState } from 'react';
+import Button from '../../components/Button/Button';
+import { UseForm } from '../../utils/UseForm';
+
 const initialValues = {
   id: 0,
   fullName: '',
@@ -18,11 +17,11 @@ const ContactForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted!');
+    console.log('Submitted!', values.fullName);
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} id='contactForm'>
       <Grid item xs={12} lg={7}>
         <Grid container>
           <Grid item className='section_title mb_30 top_30'>
@@ -34,8 +33,19 @@ const ContactForm = () => {
 
           <Grid item xs={12}>
             <Grid container spacing={3}>
-              <Grid item xs={12} sm={5}>
+              <Grid
+                style={{
+                  color: 'black',
+                  backgroundColor: 'white',
+                  border: 'none',
+                }}
+                className='form-control'
+                item
+                xs={12}
+                sm={5}
+              >
                 <TextField
+                  type='text'
                   fullwidth='true'
                   name='fullName'
                   label='Name'
@@ -43,8 +53,19 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                 />
               </Grid>
-              <Grid item xs={12} sm={5}>
+              <Grid
+                className='form-control'
+                style={{
+                  color: 'black',
+                  backgroundColor: 'white',
+                  border: 'none',
+                }}
+                item
+                xs={12}
+                sm={5}
+              >
                 <TextField
+                  type='text'
                   fullwidth='true'
                   name='email'
                   label='E-mail'
@@ -52,8 +73,19 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                 />
               </Grid>
-              <Grid item xs={12} sm={5}>
+              <Grid
+                className='form-control'
+                style={{
+                  color: 'black',
+                  backgroundColor: 'white',
+                  border: 'none',
+                }}
+                item
+                xs={12}
+                sm={5}
+              >
                 <TextField
+                  type='text'
                   fullwidth='true'
                   name='message'
                   label='Message'
@@ -64,7 +96,7 @@ const ContactForm = () => {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Button type='submit' text='Submit' />
+                <Button text='Submit' type='submit' />
               </Grid>
             </Grid>
           </Grid>

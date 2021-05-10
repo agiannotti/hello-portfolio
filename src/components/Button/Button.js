@@ -6,6 +6,8 @@ import React from 'react';
 const Button = ({ text, icon }) => {
   return (
     <MuiButton
+      text='Submit'
+      type='submit'
       className='custom_btn'
       endIcon={icon ? <div className='btn_icon_container'>{icon}</div> : null}
     >
