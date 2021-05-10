@@ -16,7 +16,8 @@ const ContactForm = () => {
   // const [emailSent, setEmailValue] = useState(false);
   const { values, handleInputChange } = UseForm(initialValues);
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
     console.log('Submitted!');
   };
 
