@@ -233,7 +233,7 @@ const resumeData = {
           link: 'https://github.com/agiannotti/quiz-app',
           icon: <GitHubIcon />,
         },
-        { link: 'agiannotti.github.io/quiz-app/', icon: <Language /> },
+        { link: 'https://agiannotti.github.io/quiz-app/', icon: <Language /> },
       ],
     },
     {
