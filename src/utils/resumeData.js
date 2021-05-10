@@ -278,11 +278,11 @@ const resumeData = {
         'Material UI with React and JS. Form Control, checkboxes, selects, submit, textfields, and matUi style hooks for functional component CSS styling.',
       links: [
         {
-          link: 'https://employee-form-seven.vercel.app/',
+          link: 'https://github.com/agiannotti/react-form-practice',
           icon: <GitHubIcon />,
         },
         {
-          link: 'https://github.com/agiannotti/react-form-practice',
+          link: 'https://employee-form-seven.vercel.app/ ',
           icon: <Language />,
         },
       ],
