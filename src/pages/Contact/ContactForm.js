@@ -1,8 +1,9 @@
-import { Grid, TextField, Typography, FormControl } from '@material-ui/core';
-// import React, { useState } from 'react';
-import Button from '../../components/Button/Button';
-import { UseForm, Form } from '../../components/utils/UseForm';
+import { Grid, TextField, Typography } from '@material-ui/core';
 
+import Button from '../../components/Button/Button';
+import { UseForm } from '../../components/utils/UseForm';
+
+// import React, { useState } from 'react';
 const initialValues = {
   id: 0,
   fullName: '',
@@ -20,7 +21,7 @@ const ContactForm = () => {
   };
 
   return (
-    <FormControl onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}>
       <Grid item xs={12} lg={7}>
         <Grid container>
           <Grid item className='section_title mb_30 top_30'>
@@ -68,7 +69,7 @@ const ContactForm = () => {
           </Grid>
         </Grid>
       </Grid>
-    </FormControl>
+    </form>
   );
 };
 
