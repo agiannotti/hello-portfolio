@@ -1,4 +1,4 @@
-import { Grid, Input, TextField, Typography } from '@material-ui/core';
+import { Grid, TextField, Typography } from '@material-ui/core';
 // import React, { useState } from 'react';
 import Button from '../../components/Button/Button';
 import { UseForm } from '../../utils/UseForm';
@@ -15,8 +15,7 @@ const ContactForm = () => {
   // const [emailSent, setEmailValue] = useState(false);
   const { values, handleInputChange } = UseForm(initialValues);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const onSubmit = () => {
     console.log('Submitted!', values.fullName);
     values.fullName = '';
     alert('Message Sent!');
