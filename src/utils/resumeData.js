@@ -1,20 +1,20 @@
-import { Language } from '@material-ui/icons';
+import { EmailRounded, Language } from '@material-ui/icons';
 import DnsTwoToneIcon from '@material-ui/icons/DnsTwoTone';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import SettingsEthernetTwoToneIcon from '@material-ui/icons/SettingsEthernetTwoTone';
 import WebTwoToneIcon from '@material-ui/icons/WebTwoTone';
 
+import bookmarkedMain1 from '../assets/images/bookmarked.main1.png';
 import consoleMain1 from '../assets/images/console.main1.png';
+import employeeformmain1 from '../assets/images/employeeformmain1.png';
+import eztaskMain1 from '../assets/images/eztask.main1.png';
 import foodfulMain1 from '../assets/images/foodful.main1.png';
 import latinlyMain1 from '../assets/images/latinly.main1.png';
-import bookmarkedMain1 from '../assets/images/bookmarked.main1.png';
-import eztaskMain1 from '../assets/images/eztask.main1.png';
-import thinkboardMain1 from '../assets/images/thinkboard.main1.png';
 import pattern3 from '../assets/images/pattern3.jpg';
-import quizMain1 from '../assets/images/quiz.main1.png';
-import employeeformmain1 from '../assets/images/employeeformmain1.png';
 import petfulMain1 from '../assets/images/petful.main1.png';
+import quizMain1 from '../assets/images/quiz.main1.png';
+import thinkboardMain1 from '../assets/images/thinkboard.main1.png';
 
 const resumeData = {
   name: 'Anthony Giannotti',
@@ -119,6 +119,11 @@ const resumeData = {
       link: 'https://www.linkedin.com/in/agiannotti/',
       text: 'LinkedIn.com/in/agiannotti',
       icon: <LinkedInIcon />,
+    },
+    email: {
+      link: 'https://www.linkedin.com/in/agiannotti/',
+      text: 'LinkedIn.com/in/agiannotti',
+      icon: <EmailRounded />,
     },
   },
   projects: [
