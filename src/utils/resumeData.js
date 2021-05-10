@@ -275,7 +275,7 @@ const resumeData = {
       caption: 'Form best practices exercise',
 
       description:
-        'Material UI with React and JS. Form Control, checkboxes, selects, submit, textfields, and style hooks to use shadow DOM CSS styling.',
+        'Material UI with React and JS. Form Control, checkboxes, selects, submit, textfields, and matUi style hooks for functional component CSS styling.',
       links: [
         {
           link: 'https://employee-form-seven.vercel.app/',
