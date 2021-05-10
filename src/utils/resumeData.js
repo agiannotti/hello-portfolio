@@ -13,6 +13,8 @@ import eztaskMain1 from '../assets/images/eztask.main1.png';
 import thinkboardMain1 from '../assets/images/thinkboard.main1.png';
 import pattern3 from '../assets/images/pattern3.jpg';
 import quizMain1 from '../assets/images/quiz.main1.png';
+import employeeformmain1 from '../assets/images/employeeformmain1.png';
+import petfulMain1 from '../assets/images/petful.main1.png';
 
 const resumeData = {
   name: 'Anthony Giannotti',
@@ -121,106 +123,168 @@ const resumeData = {
   },
   projects: [
     {
-      tag: 'React',
-      image: pattern3,
-      title: 'React Project 1',
-      caption: 'A short description',
-      description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
-      links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
-      ],
-    },
-    {
-      tag: 'Angular',
+      tag: 'Full-Stack',
       image: foodfulMain1,
-      title: 'Angular Project 1',
-      caption: 'A short description',
+      title: 'Foodful',
+      caption: 'A platform for sharing resources within communities',
 
-      description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+      description: `This application uses React and JS with a back-end API to create update and delete posted resources.`,
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/foodful-vercel',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://foodful.agiannotti.vercel.app/', icon: <Language /> },
       ],
     },
     {
       tag: 'React',
       image: consoleMain1,
-      title: 'React Project 5',
-      caption: 'A short description',
+      title: 'Console.dev',
+      caption: 'Minimalist Code Typing Test Application',
 
       description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+        'Practice typing code snippets! This project uses JavaScript, React, and some basic string manipulation to render the color of font if it matches the text.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/console.dev-client',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://console-dev-client.vercel.app/', icon: <Language /> },
       ],
     },
     {
-      tag: 'React',
+      tag: 'JQuery',
       image: bookmarkedMain1,
-      title: 'React Project 1',
-      caption: 'A short description',
+      title: 'Bookmarked',
+      caption: 'Bookmark your designated websites.',
 
       description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+        'A basic JQuery application demonstrating CRUD and raw JavaScript methods and query selectors.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/bookmark-app',
+          icon: <GitHubIcon />,
+        },
+        {
+          link: 'https://agiannotti.github.io/bookmark-app/dist/',
+          icon: <Language />,
+        },
+      ],
+    },
+    {
+      tag: 'Full-Stack',
+      image: latinlyMain1,
+      title: 'Latinly',
+      caption: 'Learn latin phrases utilizing the spaced repetition technique.',
+
+      description:
+        'This project utilizes JWT Authentication, a from-scratch back-end API to store phrases, Cypress Testing, and JS Stack and Queue data structures to implement a spaced repetition learning technique. Track your amount of correct and incorrect answers.',
+      links: [
+        {
+          link: 'https://github.com/agiannotti/latinly-client',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://latinly.vercel.app/', icon: <Language /> },
       ],
     },
     {
       tag: 'React',
-      image: latinlyMain1,
-      title: 'React Project 2',
-      caption: 'A short description',
-
-      description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+      image: pattern3,
+      title: 'This website',
+      caption: 'Hello, Portfolio',
+      description: 'Material UI, JS, Grid, react-router-dom, firebase, vercel',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/hello-portfolio',
+          icon: <GitHubIcon />,
+        },
+        {
+          link: 'https://github.com/agiannotti/hello-portfolio',
+          icon: <Language />,
+        },
       ],
     },
     {
       tag: 'React',
       image: eztaskMain1,
-      title: 'React Project 3',
-      caption: 'A short description',
+      title: 'Task Tracker Practice',
+      caption: 'Add and remove tasks and set reminders!',
 
-      description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+      description: 'Mat UI, React, Hooks, Form Control',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/task-tracker',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://eztask.vercel.app/', icon: <Language /> },
       ],
     },
     {
-      tag: 'React',
+      tag: 'JQuery',
       image: quizMain1,
-      title: 'React Project 4',
-      caption: 'A short description',
+      title: 'Quiz App',
+      caption: 'A quiz app with scores!',
 
       description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+        'track your progress, and recieve feedback for correct/ incorrect answers.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://github.com/agiannotti/quiz-app',
+          icon: <GitHubIcon />,
+        },
+        { link: 'agiannotti.github.io/quiz-app/', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Full-Stack',
+      image: petfulMain1,
+      title: 'Petful',
+      caption: 'Find your next companion!',
+
+      description:
+        'A stack and queue implementation with a timeout function to simulate waiting in line for a desired pet.',
+      links: [
+        {
+          link: 'https://github.com/agiannotti/petful-front-end',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://petful-two.vercel.app/', icon: <Language /> },
       ],
     },
     {
       tag: 'Angular',
       image: thinkboardMain1,
-      title: 'Angular Project 2',
-      caption: 'A short description',
+      title: 'Thinkboard',
+      caption:
+        'A kanban template utilizing material UIs drag and drop API. Hosted and provisioned via Firestore + Firebase',
+
+      description: '',
+      links: [
+        {
+          link: 'https://github.com/agiannotti/thinkboard-angular',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://thinkboard-d8d22.web.app/', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image: employeeformmain1,
+      title: 'Employee Form',
+      caption: 'Form best practices exercise',
 
       description:
-        'words wordswords wordswords wordswords wordswords wordswords words',
+        'Material UI with React and JS. Form Control, checkboxes, selects, submit, textfields, and style hooks to use shadow DOM CSS styling.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHubIcon /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        {
+          link: 'https://employee-form-seven.vercel.app/',
+          icon: <GitHubIcon />,
+        },
+        {
+          link: 'https://github.com/agiannotti/react-form-practice',
+          icon: <Language />,
+        },
       ],
     },
   ],
