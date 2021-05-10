@@ -120,9 +120,9 @@ const resumeData = {
       text: 'LinkedIn.com/in/agiannotti',
       icon: <LinkedInIcon />,
     },
-    email: {
-      link: 'https://www.linkedin.com/in/agiannotti/',
-      text: 'LinkedIn.com/in/agiannotti',
+    Mailto: {
+      link: `mailto:${'aj.gianno@gmail.com'}`,
+      text: '@aj.gianno@gmail.com',
       icon: <EmailRounded />,
     },
   },
