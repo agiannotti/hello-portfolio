@@ -20,12 +20,11 @@ import socialsMain1 from '../assets/images/socials.main1.png';
 const resumeData = {
   name: 'Anthony Giannotti',
   title: 'Full-Stack Software Developer',
-
   birthday: '14th November 1992',
   email: 'aj.gianno@gmail.com',
   address: 'Chicago, Illinois',
   phone: '(850)-408-4674',
-  about: `A software developer proficient in JavaScript, TypeScript, React, Angular, and Node.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nI highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
+  about: `I'm a Chicago based software developer proficient in JavaScript, TypeScript, React, Angular, and Node.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nI highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
 
   experiences: [
     {
@@ -106,7 +105,13 @@ const resumeData = {
     },
     {
       title: 'SOURCE CONTROL',
-      description: ['Git', 'GitHub', 'Agile/SCRUM'],
+      description: [
+        'Git',
+        'Iterm2/Oh my zsh',
+        'Fira Code',
+        'GitHub',
+        'Agile/SCRUM',
+      ],
     },
   ],
 
@@ -135,13 +140,13 @@ const resumeData = {
       caption: 'Social media creatve platform clone',
 
       description:
-        'This is social media clone with a feed for users to post videos, images, and articles to a viewable feed. This application utilizes react + redux alongside a firebase database with google login + authentication, and automatically populates a user profile with information from users gmail account. ',
+        'This is a social media clone with a feed for users to post videos, images, and articles to a viewable feed. This application utilizes react + redux alongside a firebase database with google login + authentication, and automatically populates a user profile with information from users gmail account. ',
       links: [
         {
           link: 'https://github.com/agiannotti/social-clone',
           icon: <GitHubIcon />,
         },
-        { link: 'https://console-dev-client.vercel.app/', icon: <Language /> },
+        { link: 'https://socials-ec27f.web.app/', icon: <Language /> },
       ],
     },
     {
