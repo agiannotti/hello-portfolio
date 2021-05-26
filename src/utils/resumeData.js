@@ -15,6 +15,7 @@ import pattern3 from '../assets/images/pattern3.jpg';
 import petfulMain1 from '../assets/images/petful.main1.png';
 import quizMain1 from '../assets/images/quiz.main1.png';
 import thinkboardMain1 from '../assets/images/thinkboard.main1.png';
+import socialsMain1 from '../assets/images/socials.main1.png';
 
 const resumeData = {
   name: 'Anthony Giannotti',
@@ -24,7 +25,7 @@ const resumeData = {
   email: 'aj.gianno@gmail.com',
   address: 'Chicago, Illinois',
   phone: '(850)-408-4674',
-  about: `A Software developer proficient in JavaScript, TypeScript, React, Angular, and Node.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nI highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
+  about: `A software developer proficient in JavaScript, TypeScript, React, Angular, and Node.\n\nMy former career within the culinary field has ensured my aptitude for adapting quickly and staying detail-oriented. I thrive on learning and taking on new challenges.\n\nI highly value accessibility, effective communication, and producing high-quality end-user experiences through diligence and creativity. `,
 
   experiences: [
     {
@@ -58,9 +59,9 @@ const resumeData = {
         'Developed fundamentals of translating a design’s intent into a functional experience. Focusing on real user problems reduces the impact of designer bias.',
     },
     {
-      title: 'Tallahassee Community College & Portland State University',
-      date: '2012-2015 / 2018',
-      description: 'Education & English Studies',
+      title: 'Southern New Hampshire University',
+      date: '2020 / 2024; Currently Enrolled',
+      description: `Computer Science Bachelor's Program with a concentration in software engineering`,
     },
   ],
   services: [
@@ -129,6 +130,22 @@ const resumeData = {
   projects: [
     {
       tag: 'Full-Stack',
+      image: socialsMain1,
+      title: 'Socials',
+      caption: 'Social media creatve platform clone',
+
+      description:
+        'This is social media clone with a feed for users to post videos, images, and articles to a viewable feed. This application utilizes react + redux alongside a firebase database with google login + authentication, and automatically populates a user profile with information from users gmail account. ',
+      links: [
+        {
+          link: 'https://github.com/agiannotti/social-clone',
+          icon: <GitHubIcon />,
+        },
+        { link: 'https://console-dev-client.vercel.app/', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Full-Stack',
       image: foodfulMain1,
       title: 'Foodful',
       caption: 'A platform for sharing resources within communities',
@@ -139,7 +156,7 @@ const resumeData = {
           link: 'https://github.com/agiannotti/foodful-vercel',
           icon: <GitHubIcon />,
         },
-        { link: 'https://foodful.agiannotti.vercel.app/', icon: <Language /> },
+        { link: 'https://socials-ec27f.web.app/', icon: <Language /> },
       ],
     },
     {
@@ -158,6 +175,7 @@ const resumeData = {
         { link: 'https://console-dev-client.vercel.app/', icon: <Language /> },
       ],
     },
+
     {
       tag: 'JQuery',
       image: bookmarkedMain1,
