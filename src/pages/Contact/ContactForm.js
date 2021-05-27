@@ -12,9 +12,7 @@ const initialValues = {
 };
 
 const ContactForm = () => {
-  // const [emailSent, setEmailValue] = useState(false);
   const { values, handleInputChange } = UseForm(initialValues);
-
   const onSubmit = () => {
     console.log('Submitted!', values.fullName);
     values.fullName = '';

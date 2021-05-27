@@ -7,11 +7,8 @@ import ContactForm from './ContactForm';
 const Contact = () => {
   return (
     <>
-      {/* Contact */}
       <Grid container spacing={2} className='section pt_45 pb_45'>
-        {/* Contact Form */}
         <ContactForm />
-        {/* Contact Information */}
         <Grid item xs={12} lg={5}>
           <Grid container>
             <Grid item className='section_title mb_30  ml_15 top_30'>
